@@ -1,7 +1,7 @@
 
 # Select your system if not autodetected by uncommenting the appropriate line:
 
-#SYSTEM=unix
+SYSTEM=unix
 #SYSTEM=dos
 #SYSTEM=windows
 
@@ -201,7 +201,7 @@ ifneq ($(PTHREAD),)
 EXAMPLES+=$(BASEBINNAME)_thread$(SUFFIX)
 endif
 
-all: $(LIBNAME) $(EXAMPLES) alogg.html
+all: $(LIBNAME) $(EXAMPLES)
 
 ifeq ($(SYSTEM),unix)
 all: alogg-config
